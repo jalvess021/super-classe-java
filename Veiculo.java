@@ -1,14 +1,14 @@
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
-public class MeioTransporte {
+public class Veiculo {
     protected int capacidadeTanque;
     protected int numeroPassageiros;
     protected double preco;
 
-    public MeioTransporte() {}
+    public Veiculo() {}
 
-    public MeioTransporte(int capacidadeTanque, int numeroPassageiros, double preco) {
+    public Veiculo(int capacidadeTanque, int numeroPassageiros, double preco) {
         this.capacidadeTanque = capacidadeTanque;
         this.numeroPassageiros = numeroPassageiros;
         this.preco = preco;

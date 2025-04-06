@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
-public class Aviao extends MeioTransporte {
+public class Aviao extends Veiculo {
     private String prefixo;
     private String dataRevisao;
 
