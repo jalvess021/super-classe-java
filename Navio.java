@@ -8,7 +8,24 @@ public class Navio extends MeioTransporte {
 
     public Navio() {}
 
+    public Navio(String nome, String dataLancamento) {
+        this.nome = nome;
+        this.dataLancamento = dataLancamento;
+    }
+
     public Navio(String nome, int numeroTripulantes, String dataLancamento) {
+        this.nome = nome;
+        this.numeroTripulantes = numeroTripulantes;
+        this.dataLancamento = dataLancamento;
+    }
+
+    public Navio(int capacidadeTanque, int numeroPassageiros, double preco, String nome) {
+        super(capacidadeTanque, numeroPassageiros, preco);
+        this.nome = nome;
+    }
+
+    public Navio(int capacidadeTanque, int numeroPassageiros, double preco, String nome, int numeroTripulantes, String dataLancamento) {
+        super(capacidadeTanque, numeroPassageiros, preco);
         this.nome = nome;
         this.numeroTripulantes = numeroTripulantes;
         this.dataLancamento = dataLancamento;
@@ -31,7 +48,7 @@ public class Navio extends MeioTransporte {
     public void entrada(Scanner sc) {
         try {
             super.entrada(sc);
-            sc.nextLine();
+            sc.nextLine(); 
             System.out.print("Nome do navio: ");
             this.nome = sc.nextLine();
             System.out.print("Número de tripulantes: ");
